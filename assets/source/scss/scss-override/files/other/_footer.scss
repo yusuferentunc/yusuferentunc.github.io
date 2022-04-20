@@ -1,0 +1,96 @@
+/*
+ * Shortcode: footer.scss
+ * -----------------------------------------------
+*/
+footer#footer {
+	background-color: #023257;
+	color: #9ba9ba;	
+	.footer-widget-area {
+		.widget {
+			.widget-title {
+				font-size: 20px;
+				margin-bottom: 22px;
+				margin-top: 9px;
+			}
+		}
+	}
+	.widget {
+		&.widget_about_info {
+			.description {
+				color: $white;
+				font-size: 34px;
+				font-weight: 700;
+				line-height: 1.471;
+				margin-bottom: 15px;
+			}
+			.styled-icons {
+				margin-bottom: 20px;
+				li {
+					background-color: transparent;
+					a {
+						background-color: transparent;
+						color: $white;
+						font-size: 18px;
+						&:hover {
+							color: var(--theme-color1);
+						}
+					}
+				}
+			}
+		}
+		&.widget_nav_menu {
+			.menu-footer-page-list {
+				ul {
+					li {
+						padding-left: 0;
+						&:before {
+							display: none;
+						}
+						a {
+							color: #9ba9ba;
+							font-weight: 500;
+							&:hover {
+								color: $white;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.widget .post .post-thumb {
+	margin-right: 10px;
+	margin-top: 6px;
+}
+.widget .post .post-thumb img {
+	border-radius: 0;
+}
+.widget .post .post-right .entry-date {
+	// color: #b4c4d0;
+}
+footer#footer .widget .post .post-right .post-date {
+	display: block;
+	margin-bottom: 0;
+}
+footer#footer .widget .post .post-right .post-title {
+	line-height: 1.8;
+}
+footer#footer .widget .post .post-right .post-title a {
+	color: $white;
+	font-weight: 600;
+}
+footer#footer a:not(.social-link):not(.icon) {
+	color: #9ba9ba;
+	font-weight: 500;
+	&:hover {
+		color: #fff;
+	}
+}
+
+.footer-bottom-style1 {
+	border-top: 1px solid #3d4f66;
+	padding: 47px 0 36px;
+}
+
+

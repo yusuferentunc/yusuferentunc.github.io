@@ -1,0 +1,56 @@
+/*
+ * Shortcode: section-title.scss
+ * -----------------------------------------------
+*/
+.tm-sc-section-title {
+  &.section-title {
+    .title-wrapper {
+      .subtitle {
+        background-color: #e8f8f7;
+        border-radius: 3px;
+        color: var(--theme-color2);
+        display: inline-block;
+        font-weight: 600;
+        margin-bottom: 20px;
+        padding: 10.5px 25px;
+        @include media-breakpoint-down(xl) {
+          font-size: 12px;
+          margin-bottom: 18px;
+        }
+        @include media-breakpoint-down(lg) {
+          font-size: 12px;
+          padding: 9px 16px;
+        }
+      }
+      .title {
+        line-height: 1.2;
+        margin-bottom: 37px;
+        margin-top: 0;
+        @include media-breakpoint-down(xl) {
+          margin-bottom: 25px;
+          font-size: 40px;
+        }
+        @include media-breakpoint-down(lg) {
+          margin-bottom: 22px;
+          font-size: 32px;
+        }
+        @include media-breakpoint-down(md) {
+          margin-bottom: 18px;
+          font-size: 30px;
+        }
+      }
+      .paragraph {
+        @include media-breakpoint-down(xl) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &.section-typo-light {
+      .title-wrapper {
+        .subtitle {
+          background-color: rgba($white, .12);
+        }
+      }
+    }
+  }
+}
