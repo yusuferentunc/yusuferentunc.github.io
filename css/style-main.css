@@ -1246,7 +1246,7 @@ body.tm_wpb_vc_js_status_true .sidebar-area {
 */
 header#header .header-top {
   color: #fff;
-  padding: 10px 0px 10px 10px;
+  padding: 0;
   font-size: 16px;
   line-height: 1.7; }
   @media (max-width: 1199.98px) {
