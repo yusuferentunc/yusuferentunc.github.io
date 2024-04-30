@@ -355,8 +355,38 @@
         </div>
       </div>
     </section>
-    <!-- TODO -->
-    <section clasS="layer-image"><img src="./images/PRUSA-23-Nisan.jpg"></section>
+
+<!--    <section clasS="layer-image"><img src="./images/PRUSA-bayram.jpg"></section>-->
+    <section class="layer-image"><img id="image-to-change" src=""> </section>
+    <script>
+      const today = new Date();
+      const imageElement = document.getElementById("image-to-change");
+      if (today.getMonth() === 2 && today.getDate() >= 17 && today.getDate() <= 19) {
+        // 18th March
+        imageElement.src = "./images/PRUSA-canakkale.jpg";
+      } else if (today.getMonth() === 3 && today.getDate() >= 22 && today.getDate() <= 24) {
+        // 23th April
+        imageElement.src = "./images/PRUSA-23-Nisan.jpg";
+      } else if (today.getMonth() === 4 && today.getDate() >= 18 && today.getDate() <= 20) {
+        // 19th May
+        imageElement.src = "./images/PRUSA-19-Mayis-AF.Y.jpg";
+      } else if (today.getMonth() === 7 && today.getDate() >= 29 && today.getDate() <= 31) {
+        // 30th August
+        imageElement.src = "./images/PRUSA-30-Agustos-english.jpg";
+      } else if (today.getMonth() === 9 && today.getDate() >= 28 && today.getDate() <= 30) {
+        // 29th October
+        imageElement.src = "./images/PRUSA-29-Ekim.jpg";
+      } else if (today.getMonth() === 10 && today.getDate() >= 9 && today.getDate() <= 11) {
+        // 10th November
+        imageElement.src = "./images/PRUSA-10-kasim-AF.jpg";
+      } else if (today.getMonth() === 10 && today.getDate() >= 23 && today.getDate() <= 25) {
+        // 24th November
+        imageElement.src = "./images/PRUSA-24-Kasim.jpg";
+      } else if ((today.getMonth() === 11 && today.getDate() >= 29) || (today.getMonth() === 0 && today.getDate() <= 2)) {
+        // 31th December
+        imageElement.src = "./images/PRUSA-new-year.jpg";
+      }
+    </script>
     <!-- Section: About -->
     <section>
       <div class="container pt-md-90">
